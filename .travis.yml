@@ -1,7 +1,26 @@
+sudo: false
+
 language: node_js
+
 node_js:
   - '0.10'
-before_install:
-  - currentfolder=${PWD##*/}
-  - if [ "$currentfolder" != 'generator-ngbp' ]; then cd .. && eval "mv $currentfolder generator-ngbp" && cd generator-ngbp; fi
+  - '0.12'
+  - iojs
 
+matrix:
+  fast_finish: true
+  allow_failures:
+    - node_js: iojs
+
+before_install:
+  - export CHROME_BIN=chromium-browser
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+  - gem install sass
+  - npm install -g npm@latest
+  - npm install -g bower
+  - npm install -g gulp
+  - npm install -g istanbul
+
+after_success:
+  - npm run coveralls

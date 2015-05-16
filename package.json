@@ -1,46 +1,61 @@
 {
   "name": "generator-angular-boilerplate",
-  "version": "0.0.1",
-  "description": "Initializr is an Angular structure generator to help you getting started with a new project based on angular boilerplate kickstarter.",
-  "keywords": [
-    "angular-boilerplate",
-    "yeoman-generator",
-    "angular structure generator",
-    "angularjs",
-    "boilerplate",
-    "scaffold",
-    "enterprise",
-    "framework",
-    "module",
-    "client",
-    "grunt",
-    "karma",
-    "express",
-    "app"
-  ],
+  "version": "0.0.2",
+  "description": "Initializr is an Angular structure generator with GulpJS",
+  "keywords": "angular-boilerplate, yeoman-generator, angular, gulp, restangular, ui-router, bootstrap, foundation, sass, less, es6, babel, traceur, typescript, coffeescript, jade, haml, webpack, jshint",
   "license": "MIT",
-  "main": "app/index.js",
-  "repository": "https://github.com/cminhho/generator-angular-boilerplate",
   "author": {
     "name": "Chung Ho",
-    "email": "",
+    "email": "hmchung92@gmail",
     "url": "https://github.com/cminhho"
+  },
+  "files": [
+    "app"
+  ],
+  "main": "app/index.js",
+  "repository": "cminhho/generator-angular-boilerplate",
+  "scripts": {
+    "pretest": "node test/template-cli.js prepare && node test/template-cli.js deps && cd test/tmp/deps && npm install && bower install",
+    "test": "mocha test/** -ig protractor",
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha -- test/** -ig protractor && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha -- test/**"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "app"
+    }
+  },
+  "dependencies": {
+    "chalk": "~1.0.0",
+    "lodash": "~3.7.0",
+    "slash": "~1.0.0",
+    "underscore.string": "~3.0.3",
+    "yeoman-generator": "~0.19.2",
+    "yosay": "~1.0.3"
+  },
+  "devDependencies": {
+    "bower": "~1.3.12",
+    "chai": "~1.9.1",
+    "chai-as-promised": "~4.1.1",
+    "commander": "^2.6.0",
+    "coveralls": "~2.11.0",
+    "cross-spawn": "~0.2.3",
+    "fixture-stdout": "~0.2.1",
+    "istanbul": "~0.3.0",
+    "js-beautify": "^1.5.4",
+    "mkdirp": "^0.5.0",
+    "mocha": "~2.0.0",
+    "mocha-lcov-reporter": "0.0.1",
+    "q": "^1.1.2",
+    "recursive-readdir": "^1.2.1",
+    "sinon": "^1.12.2",
+    "sinon-chai": "^2.7.0",
+    "wrench": "^1.5.8"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
   },
   "engines": {
     "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "mocha"
-  },
-  "dependencies": {
-    "chalk": "~0.4.0",
-    "inflected": "^1.1.6",
-    "lodash": "^3.7.0",
-    "touch": "0.0.3",
-    "yeoman-generator": "~0.16.0",
-    "yo": ">=1.0.0"
-  },
-  "devDependencies": {
-    "mocha": "*"
   }
 }

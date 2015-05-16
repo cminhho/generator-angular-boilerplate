@@ -1,0 +1,48 @@
+{
+  "staticFiles": [
+    ".bowerrc",
+    ".editorconfig",
+
+    "protractor.conf.js",
+
+    "e2e/.jshintrc",
+    "e2e/main.spec.js",
+
+    "gulpfile.js",
+    "gulp/.jshintrc",
+    "gulp/e2e-tests.js",
+    "gulp/proxy.js",
+    "gulp/tsd.js",
+    "gulp/unit-tests.js",
+
+    "src/favicon.ico",
+    "src/assets/images/yeoman.png"
+  ],
+  "templates": [
+    ".gitignore",
+    ".jshintrc",
+
+    "package.json",
+    "bower.json",
+    "tsd.json",
+
+    "karma.conf.js",
+
+    "e2e/main.po.js",
+
+    "gulp/conf.js",
+    "gulp/build.js",
+    "gulp/inject.js",
+    "gulp/markups.js",
+    "gulp/scripts.js",
+    "gulp/styles.js",
+    "gulp/watch.js",
+    "gulp/server.js",
+
+    "src/app/index.module.js",
+    "src/index.html",
+    "src/app/main/main.controller.js",
+    "src/app/main/main.controller.spec.js",
+    "src/app/components/navbar/navbar.controller.js"
+  ]
+}
