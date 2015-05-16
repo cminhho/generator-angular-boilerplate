@@ -15,7 +15,7 @@ in coffeescript regularly, especially coffeescript grunt builds.
 Install generator-ngbp from npm, run:
 
 ```
-$ npm install -g generator-ngbp
+$ npm install -g generator-angular-boilerplate
 ```
 
 Create a new directory for your project and cd into it:
@@ -28,7 +28,7 @@ $ cd my-new-project
 Initiate the generator:
 
 ```
-$ yo ngbp
+$ yo angular-boilerplate
 ```
 ### Mocking
 You can now switch in and out of mocking mode by simply running ```grunt watchmock``` vs ```grunt watch```.  Switching between the two will handle all the necessary configuration within your SPA. Running in mock mode will use $httpBackend to intercept any external http calls you manually configure and return whatever results you want.
