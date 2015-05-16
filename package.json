@@ -1,11 +1,11 @@
 {
   "name": "generator-angular-boilerplate",
-  "version": "0.2.0",
-  "description": "Yeoman generator based on the angular boilerplate kickstarter, a best-practice boilerplate for scalable Angular projects built on a highly modular, folder-by-feature structure. Now with easily switchable mocking via $httpBackend and RESTful resource scaffolding.",
+  "version": "0.0.1",
+  "description": "Initializr is an Angular structure generator to help you getting started with a new project based on angular boilerplate kickstarter.",
   "keywords": [
     "angular-boilerplate",
     "yeoman-generator",
-    "angular",
+    "angular structure generator",
     "angularjs",
     "boilerplate",
     "scaffold",

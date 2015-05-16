@@ -1,4 +1,4 @@
-# generator-ngbp
+# generator-angular-boilerplate
 
 > Yeoman Generator based on the popular ngBoilerplate AngularJS kickstarter.  ngBoilerplate is a best-practice boilerplate for scalable Angular projects built on a highly modular, folder-by-feature structure.  You work in vertical slices on a daily basis (view, controller, service, etc), so why not organize your projects to optimize your workflow, maximize discoverability, and get copy-paste module reuse for free?
 
@@ -12,7 +12,7 @@ in coffeescript regularly, especially coffeescript grunt builds.
 
 ## Quick Start
 
-Install generator-ngbp from npm, run:
+Install generator-angular-boilerplate from npm, run:
 
 ```
 $ npm install -g generator-angular-boilerplate
@@ -38,12 +38,12 @@ See mockApp.js for a full CRUD example (*actually, Delete isn't in yet*), and co
 ### Sub-Generators
 
 There's only one subgenerator at the moment
-    ngbp:module
+    angular-boilerplate:module
 
 To create a new module...
 
 ```
-$ yo ngbp:module "moduleName"
+$ yo angular-boilerplate:module "moduleName"
 ```
 
 You can specify the root folder of the module via prompt - default is "app".
@@ -57,7 +57,7 @@ You have to authorize the overwrite of app.js when the subgenerator adds a depen
 ##### RESTful Scaffolding
 If you choose yes to wrap a RESTful resource, you will get fully scaffolded RESTful controllers, views, and a service for CRUD support, using ngResource under the covers - so don't forget to answer 'y' when asked if you want angular-resource when you generate your app, or just add it yourself.  The naming convention is currently setup to handle straightforward pluralized module names, like "products", and the scaffolding assumes an api hanging off whatever domain your spa is running on (e.g. http://mydomain.com/api/products).  Try the following...
 ```
-yo ngbp:module "products"
+yo angular-boilerplate:module "products"
 ```
 ...type ```y``` when asked if you want to wrap a RESTful resource, then switch your ```grunt watch``` over to ```grunt watchmock``` to see a fully-working example.  Navigate to http://localhost:9000/#/products to view (there's no navigation scaffolding at this point, but the routing is there).  The mocked results for "products" are handled in a heavily-commented mockApp.js, which you can edit to mock whatever you want.
 
@@ -76,7 +76,7 @@ When you run "grunt compile", this same variable is used to add the vendor files
 
 ### More Info
 
-To learn more about ngBoilerplate, [click here](https://github.com/ngbp/ngbp)
+To learn more about ngBoilerplate, [click here](https://github.com/angular-boilerplate/angular-boilerplate)
 
 
 
