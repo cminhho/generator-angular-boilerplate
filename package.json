@@ -1,0 +1,46 @@
+{
+  "name": "generator-angular-boilerplate",
+  "version": "0.2.0",
+  "description": "Yeoman generator based on the angular boilerplate kickstarter, a best-practice boilerplate for scalable Angular projects built on a highly modular, folder-by-feature structure. Now with easily switchable mocking via $httpBackend and RESTful resource scaffolding.",
+  "keywords": [
+    "angular-boilerplate",
+    "yeoman-generator",
+    "angular",
+    "angularjs",
+    "boilerplate",
+    "scaffold",
+    "enterprise",
+    "framework",
+    "module",
+    "client",
+    "grunt",
+    "karma",
+    "express",
+    "app"
+  ],
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "https://github.com/cminhho/generator-angular-boilerplate",
+  "author": {
+    "name": "Chung Ho",
+    "email": "",
+    "url": "https://github.com/cminhho"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "chalk": "~0.4.0",
+    "inflected": "^1.1.6",
+    "lodash": "^3.7.0",
+    "touch": "0.0.3",
+    "yeoman-generator": "~0.16.0",
+    "yo": ">=1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
