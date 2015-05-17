@@ -1,6 +1,6 @@
 {
   "name": "generator-angular-boilerplate",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Angular-boilerplate generator to help you getting started with a new project based on Angular Boilerplate",
   "keywords": "angular-boilerplate, yeoman-generator, angular, gulp, restangular, ui-router, bootstrap, foundation, sass, less, es6, babel, traceur, typescript, coffeescript, jade, haml, webpack, jshint",
   "license": "MIT",
