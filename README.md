@@ -1,4 +1,4 @@
-# generator-gulp-angular
+# generator-angular-boilerplate
 
 ## Usage
 
