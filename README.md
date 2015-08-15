@@ -1,4 +1,4 @@
-# generator-angular-boilerplate
+# generator-angular-boilerplate [![npm version](https://badge.fury.io/js/generator-angular-boilerplate.svg)](http://badge.fury.io/js/generator-angular-boilerplate)
 
 ## Usage
 
